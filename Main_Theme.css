@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow-y: scroll;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+main{
+    padding-left: 144px;
+    max-width: calc(100% - 144px);
+    overflow-x: hidden;
+}
+
+.header{
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 28px;
+    letter-spacing: 7px;
+    color: #f96f24;
+    text-align: center;
+}
+
+.sub-header{
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+    line-height: 35px;
+    color: #f96f24;
+}
+
+.content{
+    font-family: Courier, monospace;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+.comments{
+    font-family: Courier, monospace;
+    color: #F0D1A3;
+    font-size: 17px;
+    font-style: bold;
+    line-height: 20px;
+}
+
+/* Centered Content */
+.center{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    overflow: visible;
+}
+
+.border{
+    border: solid 5px #2b1102;
+}
+
+/* type of beverages */
+.type_background{
+    background-image: url(Images/coffee_waves.png);
+    background-repeat: repeat;
+    height: auto;
+    padding: 130px 80px;
+}
+
+.type_title_container{
+    transform: translate(-50%, -50%); 
+    position: absolute;
+    left: 50%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width: fit-content;
+    height: fit-content;
+    padding: 30px;
+    background-color: #F0D1A3;
+    border:solid 5px #6D3F26;
+    text-align: center;
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,.2);
+}
+
+.type_container{
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    width: 90%;
+    background-color: #F0D1A3;
+    border: solid 5px #6D3F26;
+    padding: 130px 50px 50px;
+}
+
+.type_content1{
+    display: flex;
+    flex-direction: column;
+}
+
+.type_content2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    contain: content;
+    flex-wrap: wrap-reverse;
+    padding-bottom: 50px;
+}
+
+.type_content_div{
+    height: 50%;
+    width: 45%;
+}
+
+.type_content_div img{
+    width: calc(100% - 11px);
+    height: calc(100% - 9px);
+    border: solid 5px #6D3F26;
+}
+
+
+
+.type_content_textL{
+    text-align: left;
+    
+}
+
+.type_content_textR{
+    text-align: right;
+}
+
+/* footer */
+.footer_container{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-evenly;
+    width: calc(100vw - 140px);
+    height: auto;
+    background-color: #f96f24;
+    box-shadow: 0 0 20px #952B1D;
+}
+
+.footer_orientation{
+    padding: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.footer_orientation2 {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: fit-content;
+    column-gap: 35px;
+}
+
+/*card container*/
+.card{
+    max-width: 35vw;
+    height: fit-content;
+    background-color: #F0D1A3;
+    border: solid 4px #2b1102;
+    box-shadow: 15px 15px 0 -4px #F0D1A3, 15px 15px #2b1102;
+}
+
+.footer_content{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.footer_content h5{
+    color: #2b1102;
+}
+
+/* enquiry form
+.enquiry_form{
+
+} */
+
+
+/* Off Canvas Nav Bar */
+
+/* scroll progress indicator*/
+.SI_container{
+    width: 100%;
+    height: 5px;
+    background: #232323;
+}
+
+.SI_progress{
+    height: 5px;
+    background-color: #f96f24;
+    width: 0;
+}
+
+.signup_form input{
+    height: 25px;
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 18px;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #2b1102;
+    font-family: 'Courier New', Courier, monospace;
+    color: #952B1D;
+    background-color: #F0D1A3;
+    resize: none;
+    font-style: italic;
+}
+
+.signup_form textarea{
+    width: 100%;
+    height: 100px;
+    padding: 10px 5px;
+    font-size: 18px;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    border: 2px solid #2b1102;
+    font-family: 'Courier New', Courier, monospace;
+    color: #952B1D;
+    background-color: #F0D1A3;
+    resize: none;
+    font-style: italic;
+}
+
+.signup_form button{
+    margin: 20px 0 20px;
+    height: fit-content;
+    width: 99%;
+    background-color: #F0D1A3;
+    font-weight: 700;
+    padding: 12px 18px;
+    border-radius: 4px;
+    border: solid 2px #2b1102;
+    box-shadow: 4px 4px #2b1102;
+    transition: transform 50ms, box-shadow 50ms;
+}
+
+.signup_form button:hover{
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px #2b1102;
+    color: #F0D1A3;
+    background-color: #952B1D;
+    cursor: pointer;
+}
+
+.signup_form #email_error,
+.signup_form #email2_error,
+.signup_form #username_error,
+.signup_form #enquiry_error{
+    margin-bottom: 5px;
+    margin-top: -5px;
+    font-size: 15px;
+    color: red;
+    display: none;
+}
+
+@media screen and (max-width: 1265px){
+    .type_content2{
+        flex-direction: column;
+    }
+
+    .type_content2.reverse{
+        flex-direction: column-reverse;
+    }
+
+    .type_content_div {
+        width: 90%;
+    }
+
+    .type_content2 .type_content_textR img,
+    .type_content2 .type_content_textL img {
+        margin-top: 50px;
+    }
+
+    .type_table tr {
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+}
